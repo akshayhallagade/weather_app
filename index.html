@@ -2,34 +2,49 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Weather app Class</title>
-
-    <link rel="stylesheet" href="index.css" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
-    <div class="container">
-      <div class="weather">
-        <div class="temp">20</div>
-        <div class="time_location">
-          <p>Location</p>
-          <span>Random time and Date</span>
+    <div class="bg">
+      <div class="left">
+        <div class="p1">MOSTLY SUNNY</div>
+        <div class="p2">ONTARIO, CANADA</div>
+        <div class="p3">
+          <div class="degree">69<i class="fa-regular fa-circle"></i></div>
+          <div class="extraa">
+            <div id="temp" class="item">FEELS LIKE: 69</div>
+            <div id="wind" class="item">WIND: 6MPH</div>
+            <div id="humidity" class="item">HUMIDITY: 69%</div>
+          </div>
         </div>
-
-        <div class="weather_condition">
-          <p><img src="" alt="" /></p>
-          <span>Condition</span>
+        <div class="p4">
+          <div class="card">
+            <p>PRECIPITATION</p>
+            <div id="precipitation" class="card-value">0 %</div>
+          </div>
+          <div class="card">
+            <p>WIND-DIRECTION</p>
+            <div id="wind-dire" class="card-value">SE</div>
+          </div>
+          <div class="card">
+            <p>WIND SPEED</p>
+            <div id="wind-speed" class="card-value">6.8 kph</div>
+          </div>
         </div>
       </div>
+      <div class="right">
+        <input type="text" placeholder="Search City or ZIP" />
+      </div>
+      <script src="script.js"></script>
     </div>
-    <nav>
-      <form>
-        <input type="text" placeholder="Search_location" class="searchField" />
-        <button type="submit">Search</button>
-      </form>
-    </nav>
   </body>
-
-  <script src="index.js"></script>
 </html>
