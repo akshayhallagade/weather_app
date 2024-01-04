@@ -9,7 +9,7 @@
 body {
   width: 100vw;
   height: 100vh;
-  background-image: url(nature.jpg);
+  /* background-image: url(nature.jpg); */
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -17,14 +17,17 @@ body {
   width: 100%;
   height: 100%;
   padding: 50px;
-  /* background-color: rgba(94, 94, 94, 0.845); */
+  background-color: rgba(155, 155, 155, 0.268);
   display: flex;
 }
+/* ........................................................ */
 /* left */
 .left {
-  width: 50%;
+  width: 70%;
   height: 100%;
   color: white;
+  display: flex;
+  align-items: end;
 }
 .p1 {
   font-weight: 200;
@@ -35,18 +38,17 @@ body {
 .p3 {
   display: flex;
   align-items: center;
+  gap: 20px;
 }
 .p3 .degree {
-  width: 320px;
+  width: fit-content;
   font-size: 200px;
   font-weight: 800;
   position: relative;
 }
 .p3 .degree i {
-  font-weight: 200;
   font-size: 15px;
   position: absolute;
-  top: 50px;
 }
 .p4 {
   display: flex;
@@ -58,19 +60,31 @@ body {
 /* ........................................................ */
 /* right */
 .right {
-  width: 50%;
+  width: 30%;
   height: 100%;
 }
-.right input {
+.selectCity {
+  width: fit-content;
+  height: fit-content;
+}
+.selectCity input {
   width: 270px;
-  padding: 6px 12px;
+  padding: 6px 12px 6px 50px;
   float: right;
   outline: none;
   border: none;
-  background-color: rgba(161, 161, 161, 0.641);
-  color: white;
+  background-color: rgba(5, 5, 5, 0.365);
+  color: rgb(255, 255, 255);
+  position: relative;
 }
-.right input::placeholder {
+.selectCity input::placeholder {
   font-size: 16px;
-  color: rgb(76, 76, 76);
+  color: rgb(90, 90, 90);
+}
+.selectCity i {
+  position: relative;
+  left: 35px;
+  top: 5px;
+  color: rgb(67, 67, 67);
+  font-size: 17px;
 }

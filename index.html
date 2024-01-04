@@ -16,33 +16,38 @@
   <body>
     <div class="bg">
       <div class="left">
-        <div class="p1">MOSTLY SUNNY</div>
-        <div class="p2">ONTARIO, CANADA</div>
-        <div class="p3">
-          <div class="degree">69<i class="fa-regular fa-circle"></i></div>
-          <div class="extraa">
-            <div id="temp" class="item">FEELS LIKE: 69</div>
-            <div id="wind" class="item">WIND: 6MPH</div>
-            <div id="humidity" class="item">HUMIDITY: 69%</div>
+        <div>
+          <div class="p1"></div>
+          <div class="p2"></div>
+          <div class="p3">
+            <div class="degree"></div>
+            <div class="extraa">
+              <div id="cloud" class="item"></div>
+              <div id="pressure" class="item"></div>
+              <div id="humidity" class="item"></div>
+            </div>
           </div>
-        </div>
-        <div class="p4">
-          <div class="card">
-            <p>PRECIPITATION</p>
-            <div id="precipitation" class="card-value">0 %</div>
-          </div>
-          <div class="card">
-            <p>WIND-DIRECTION</p>
-            <div id="wind-dire" class="card-value">SE</div>
-          </div>
-          <div class="card">
-            <p>WIND SPEED</p>
-            <div id="wind-speed" class="card-value">6.8 kph</div>
+          <div class="p4">
+            <div class="card">
+              <p>PRECIPITATION</p>
+              <div id="precipitation" class="card-value"></div>
+            </div>
+            <div class="card">
+              <p>WIND DIRECTION</p>
+              <div id="wind-dire" class="card-value"></div>
+            </div>
+            <div class="card">
+              <p>WIND SPEED</p>
+              <div id="wind-speed" class="card-value"></div>
+            </div>
           </div>
         </div>
       </div>
       <div class="right">
-        <input type="text" placeholder="Search City or ZIP" />
+        <div class="selectCity">
+          <input type="text" placeholder="Search City" />
+          <i class="fas fa-search"></i>
+        </div>
       </div>
       <script src="script.js"></script>
     </div>
