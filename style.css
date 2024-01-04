@@ -9,7 +9,7 @@
 body {
   width: 100vw;
   height: 100vh;
-  /* background-image: url(nature.jpg); */
+  background-image: url(nature.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -18,13 +18,52 @@ body {
   height: 100%;
   padding: 50px;
   background-color: rgba(155, 155, 155, 0.268);
-  display: flex;
+  display: inline-block;
 }
+/* ........................................................ */
+/* right */
+/* .right {
+  width: 30%;
+  height: 100%;
+} */
+.searchbar {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  justify-content: flex-end;
+  /* background-color: aquamarine; */
+}
+.selectCity {
+  width: fit-content;
+  height: fit-content;
+  /* background-color: aqua; */
+}
+.selectCity input {
+  width: 270px;
+  padding: 10px 12px 10px 50px;
+  outline: none;
+  border: none;
+  background-color: rgba(5, 5, 5, 0.365);
+  color: rgb(255, 255, 255);
+  position: relative;
+}
+.selectCity input::placeholder {
+  font-size: 16px;
+  color: rgb(90, 90, 90);
+}
+.selectCity i {
+  position: relative;
+  left: -255px;
+  top: 2px;
+  color: rgb(90, 90, 90);
+  font-size: 17px;
+}
+
 /* ........................................................ */
 /* left */
 .left {
-  width: 70%;
-  height: 100%;
+  width: 100%;
+  height: 90%;
   color: white;
   display: flex;
   align-items: end;
@@ -42,7 +81,7 @@ body {
 }
 .p3 .degree {
   width: fit-content;
-  font-size: 200px;
+  font-size: 150px;
   font-weight: 800;
   position: relative;
 }
@@ -57,34 +96,35 @@ body {
 .card .card-value {
   font-size: 50px;
 }
-/* ........................................................ */
-/* right */
-.right {
-  width: 30%;
-  height: 100%;
-}
-.selectCity {
-  width: fit-content;
-  height: fit-content;
-}
-.selectCity input {
-  width: 270px;
-  padding: 6px 12px 6px 50px;
-  float: right;
-  outline: none;
-  border: none;
-  background-color: rgba(5, 5, 5, 0.365);
-  color: rgb(255, 255, 255);
-  position: relative;
-}
-.selectCity input::placeholder {
-  font-size: 16px;
-  color: rgb(90, 90, 90);
-}
-.selectCity i {
-  position: relative;
-  left: 35px;
-  top: 5px;
-  color: rgb(67, 67, 67);
-  font-size: 17px;
+
+@media screen and (max-width: 700px) {
+  .searchbar {
+    justify-content: center;
+  }
+  .left {
+    align-items: center;
+    justify-content: center;
+  }
+  .p1,
+  .p2 {
+    text-align: center;
+  }
+  .p3 {
+    display: flex;
+    justify-content: center;
+  }
+
+  .p3 .degree {
+    font-size: 70px;
+  }
+  .p4 {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .extraa {
+    display: none;
+  }
+  .card .card-value {
+    font-size: 30px;
+  }
 }
