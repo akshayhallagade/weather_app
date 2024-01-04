@@ -2,7 +2,6 @@
 const shortRef = document.querySelector(".p1");
 const locationRef = document.querySelector(".p2");
 const degreeRef = document.querySelector(".degree");
-const leftRef = document.querySelector(".left");
 
 const cloudRef = document.querySelector("#cloud");
 const pressureRef = document.querySelector("#pressure");
@@ -12,7 +11,7 @@ const winddirectionRef = document.querySelector("#wind-dire");
 const windSpeedRef = document.querySelector("#wind-speed");
 
 getWeather("Rajapur, Maharashtra");
-const inputRef = document.querySelector(".right input");
+const inputRef = document.querySelector(".selectCity input");
 inputRef.addEventListener("keydown", function (event) {
   if (event.key === "Enter") {
     const cityValue = inputRef.value;
